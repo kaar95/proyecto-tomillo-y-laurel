@@ -1,0 +1,23 @@
+$color-principal: #4C894E;
+$color-2: #2B4B37;
+$color-3: #E7FFF0;
+$color-4: #14231a;
+
+@mixin padding-display{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+@mixin text-hight-align{
+    height: 50px;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+@mixin display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

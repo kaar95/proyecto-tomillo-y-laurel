@@ -1,0 +1,35 @@
+.card-tips{
+        img{
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px rgb(190, 188, 188);
+        };
+}
+
+#cards-container-tips{
+    @include padding-display;
+    .card-tip{
+        flex-direction: row;
+        background-color:#2b4b37c7;;
+        width: 250px;
+        height: 300px;
+        border-radius: 2px;
+        margin: 16px;
+        margin-top: 1vh;
+        box-shadow: 2px 2px 3px rgba(45, 63, 46, 0.364);
+        border-radius: 10px;
+        justify-content: center;
+        
+        img{
+            height: 250px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+        }
+    
+        p{
+            color: $color-3;
+            @include text-hight-align;
+        }
+    }
+}

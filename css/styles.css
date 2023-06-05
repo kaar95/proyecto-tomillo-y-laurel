@@ -1,306 +1,432 @@
-*{
-    margin: 0;
-    padding: 0;
+.cards-recetas1 {
+  justify-content: center;
 }
 
-html{
-    background-color: #E7FFF0;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
+#recetas-seccion {
+  background-color: #14231a;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+#recetas-seccion .cards-recetas {
+  width: 200px;
+  height: 300px;
+  background-color: #E7FFF0;
+  border-radius: 10px;
+  margin: 16px;
+  margin-top: 1vh;
+  box-shadow: 2px 2px 3px rgb(45, 63, 46);
+}
+#recetas-seccion .cards-recetas img {
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+#recetas-seccion .cards-recetas p {
+  padding-left: 8px;
+  color: #14231a;
+  height: 50px;
+  width: 200px;
+  padding-top: 10px;
+  text-align: center;
 }
 
-header{
-    background-color: #4C894E;
-    font-size: 20px;
-    font-weight: 310000;
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
+.card-principal-recetas {
+  margin: 0 auto;
+}
+.card-principal-recetas img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgb(190, 188, 188);
 }
 
-header ul{
-    margin-right: 1rem;
+.card-tips img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgb(190, 188, 188);
 }
 
-.logo-principal{
-    min-width: 200px;
-    margin-left: 1rem;
+#cards-container-tips {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+#cards-container-tips .card-tip {
+  flex-direction: row;
+  background-color: rgba(43, 75, 55, 0.7803921569);
+  width: 250px;
+  height: 300px;
+  border-radius: 2px;
+  margin: 16px;
+  margin-top: 1vh;
+  box-shadow: 2px 2px 3px rgba(45, 63, 46, 0.364);
+  border-radius: 10px;
+  justify-content: center;
+}
+#cards-container-tips .card-tip img {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+#cards-container-tips .card-tip p {
+  color: #E7FFF0;
+  height: 50px;
+  width: 200px;
+  padding-top: 10px;
+  text-align: center;
 }
 
-#searchbar{
-    width: 300px;
-    background-color: #E7FFF0;
-    border-style: none;
-    border-radius: 10px;
-    height: 32px;
-    padding-left: 16px;
-    position: relative;
-    align-items: center;
+#cards-container-salud img {
+  border-radius: 5px;
 }
 
-.search{
-    font-size: 15px;
+.mapa iframe {
+  border-radius: 10px;
+  height: 200px;
+  width: 90%;
 }
 
-.icono-nav{
-    border-style: none;
-    margin-left: 1rem;
+#formulario .textos-form {
+  font-family: "Aboreto", cursive;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+#formulario .form-contacto div {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  align-items: baseline;
+}
+#formulario .form-contacto input {
+  border-radius: 5px;
+  border-style: none;
+  height: 35px;
+  padding-left: 10px;
+  width: 200px;
+  margin-left: 16px;
+}
+#formulario .cuentanos textarea {
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+#formulario .boton input {
+  width: fit-content;
+  padding: 10px;
+  height: fit-content;
+  background-color: #2B4B37;
+  color: #E7FFF0;
 }
 
-h1{
-    font-family: 'Aboreto', cursive;
-    padding: 16px;
+form {
+  padding: 30px;
+  background-image: url(../Images/bolsa-verduras.jpg);
+  background-size: 2000px;
+  background-repeat: no-repeat;
 }
 
-a{
-    color: rgb(255, 255, 255);
-}
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
-.menu li{
-    margin-left: 10px;
+html {
+  font-family: "Roboto", sans-serif;
+  min-width: 100%;
 }
 
-img{
-    max-width: 100%;
+body {
+  background-color: #E7FFF0;
 }
 
-video{
-    max-width: 100%;
+header {
+  background-color: #4C894E;
+  font-size: 20px;
+  font-weight: 310000;
+  font-family: "Roboto", sans-serif;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+}
+header .logo-principal {
+  min-width: 200px;
+  margin-left: 1rem;
+}
+header .icono-n {
+  border-style: none;
+  margin-left: 1rem;
+}
+header .menu li {
+  margin-left: 10px;
+}
+header #search-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #E7FFF0;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #search-box .search-button {
+  color: #E7FFF0;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2B4B37;
+  transition: 0.4s;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #search-box .search-button img {
+  height: 24px;
+}
+header #search-box .search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #E7FFF0;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+header #search-box:hover > .search-input {
+  width: 240px;
+}
+header #search-box:hover > .search-button {
+  background: #E7FFF0;
+}
+@media screen and (max-width: 620px) {
+  header .search-box:hover > .search-input {
+    width: 150px;
+    padding: 0 6px;
+  }
 }
 
-main{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    flex-wrap: wrap;
-    justify-content: center;
+h1 {
+  font-family: "Aboreto", cursive;
+  padding: 16px;
+  width: 14ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  overflow: hidden;
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
 }
 
-.cards-inicio{
-    width: 200px;
-    height: 300px;
-    background-color: #2B4B37;
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
-    margin: 16px;
-    margin-top: 1vh;
-    box-shadow: 2px 2px 3px rgb(190, 188, 188);
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+hr {
+  color: #4C894E;
 }
 
-.cards-inicio img{
-    height: 250px;
-    width: 300px;
-    overflow: hidden;
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-.card-image{
-    height: 250px;
+ul {
+  list-style: none;
 }
 
-.cards-inicio p{
-    height: 50px;
-    width: 200px;
-    padding-top: 10px;
-    padding-left: 8px;
+img {
+  max-width: 100%;
 }
 
-footer{
-    background-image: url("/Images/ilustracion-comida.jpg");
-    padding: 32px 32px 32px;
-    margin-top: 5px;
-    background-image: url(../Images/ilustracion-comida.jpg);
+video {
+  max-width: 100%;
 }
 
-h4{
-    font-family: 'Aboreto', cursive;
-    color: #14231a;
-    font-weight: bolder;
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer-menu a{
-    font-family: 'Roboto', sans-serif;
-    color: #2B4B37;
-    padding-top: 40px;
-
+.cards-inicio {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+.cards-inicio .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cards-inicio .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 3px 5px #2B4B37;
+}
+.cards-inicio .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards-inicio .front p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.cards-inicio .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #2B4B37;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.cards-inicio .back p {
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.cards-inicio:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.cards-inicio:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.card-image {
+  height: 250px;
 }
 
-.footer-social{
-    padding-right: 32px;
+footer {
+  background-image: url("/Images/ilustracion-comida.jpg");
+  padding: 32px 32px 32px;
+  margin-top: 5px;
+  background-image: url(../Images/ilustracion-comida.jpg);
+}
+footer .footer-menu a {
+  font-family: "Roboto", sans-serif;
+  color: #2B4B37;
+  padding-top: 40px;
+}
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .footer-social {
+  padding-right: 32px;
 }
 
-.card-principal img{
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px rgb(190, 188, 188);
-    margin: 16px;
+h4 {
+  font-family: "Aboreto", cursive;
+  color: #14231a;
+  font-weight: bolder;
 }
 
-.textos{
-    font-size: small;
-    padding-left: 16px;
-    padding-right: 16px;
+.card-principal img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgb(190, 188, 188);
 }
 
-.cards{
-    display: flex;
+.textos {
+  font-size: small;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-h2{
-    font-family: 'Aboreto', cursive;
-    font-size: large;
-    padding-left: 16px;
-    padding-top: 16px;
-    margin-bottom: 5px;
+.cards {
+  display: flex;
 }
 
-hr{
-    color: #4C894E;
+h2 {
+  font-family: "Aboreto", cursive;
+  font-size: large;
+  padding-left: 16px;
+  padding-top: 16px;
+  margin-bottom: 5px;
 }
 
-.titulos{
-    font-family: 'Aboreto', cursive;
-    margin-left: 2rem;
-    margin-top: 1rem;
+.titulos {
+  padding-left: 30px;
+  font-size: large;
 }
 
-.cards-secundarias{
-    width: 300px;
-    margin: 10px;
+.cards-secundarias {
+  width: 300px;
+  margin: 10px;
+}
+.cards-secundarias img {
+  border-radius: 10px;
+  max-height: 200px;
 }
 
-.cards-secundarias img{
-    border-radius: 10px;
-    max-height: 200px;
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.cards-container{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 50px
+.img-contacto {
+  height: 50px;
+  min-width: 1000px;
 }
 
-.form-contacto div{
-    padding: 5px;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 50px;
-    align-items: baseline;
+.recetas-boton {
+  border-style: none;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  margin-left: 16px;
 }
 
-.form-contacto input{
-    border-radius: 5px;
-    border-style: none;
-    height: 35px;
-    padding-left: 10px;
-    width: 200px;
-    margin-left: 16px;
+.textos-slider {
+  background-color: rgba(20, 35, 26, 0.6588235294);
+  text-shadow: #14231a;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.boton input{
-    width: fit-content;
-    padding: 10px;
-    height: fit-content;
-    background-color: #2B4B37;
-    color: #E7FFF0;
+.carousel2 {
+  width: 90%;
+  margin: 0% auto;
+}
+.carousel2 img {
+  border-radius: 5px;
+}
+.carousel2 .carousel-item {
+  height: 400px;
 }
 
-.img-contacto{
-    height: 50px;
-    min-width: 1000px;
-}
-
-.recetas-boton{
-    border-style: none;
-    height: 35px;
-    width: 100px;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    padding-left: 10px;
-    margin-left: 16px;
-}
-
-.cuentanos textarea{
-    border-style: none;
-    font-family: 'Roboto', sans-serif;
-    padding: 16px;
-    border-radius: 5px;
-    margin-left: 16px;
-}
-
-form{
-    padding: 30px;
-    background-image: url(../Images/bolsa-verduras.jpg);
-    background-size: 2000px;
-    background-repeat: no-repeat
-}
-
-.mapa iframe{
-    border-radius: 10px;
-    margin: 16px;
-    height: 200px;
-    width: 1000px;
-
-}
-
-.cards-tips{
-    background-color: #2B4B37;
-    display: flex;
-    
-}
-
-.card-tip{
-    color: #ffffff;
-    width: 200px;
-    height: 300px;
-    color: rgb(255, 255, 255);
-    border-radius: 2px;
-    margin: 16px;
-    margin-top: 50px;
-    background-color: #4C894E;
-¿}
-
-.card-tip p{
-    height: 50px;
-    width: 200px;
-    padding-top: 10px;
-    padding-left: 8px;
-}
-
-.cards-recetas1{
-    justify-content: center;
-}
-
-.textos-slider{
-    background-color: #14231aa8;
-    text-shadow: #14231a;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.carousel2{
-    width: 90%;
-    margin: 0% auto;
-}
-
-.carousel2 img{
-    border-radius: 5px;
-}
-
-.carousel-item{
-    height: 400px;
-}
-
-
+/*# sourceMappingURL=styles.css.map */

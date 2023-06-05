@@ -1,0 +1,60 @@
+.mapa{
+    iframe{
+        border-radius: 10px;
+        height: 200px;
+        width: 90%;
+    }
+}
+
+#formulario{
+    .textos-form{
+        font-family: 'Aboreto', cursive;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .form-contacto{
+        div{
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 50px;
+            align-items: baseline;
+        }
+        input{
+            border-radius: 5px;
+            border-style: none;
+            height: 35px;
+            padding-left: 10px;
+            width: 200px;
+            margin-left: 16px;
+        }
+    }
+    .cuentanos{
+        textarea{
+            border-style: none;
+            font-family: 'Roboto', sans-serif;
+            padding: 16px;
+            border-radius: 5px;
+            margin-left: 16px;
+        }
+    }
+    
+    .boton{
+        input{
+            width: fit-content;
+            padding: 10px;
+            height: fit-content;
+            background-color: $color-2;
+            color: $color-3;
+        }
+}
+}
+
+form{
+    padding: 30px;
+    background-image: url(../Images/bolsa-verduras.jpg);
+    background-size: 2000px;
+    background-repeat: no-repeat
+}
+
+
