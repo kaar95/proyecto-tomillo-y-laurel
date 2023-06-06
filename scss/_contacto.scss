@@ -7,6 +7,8 @@
 }
 
 #formulario{
+    display: flex;
+    flex-direction: row;
     .textos-form{
         font-family: 'Aboreto', cursive;
         margin-left: 2rem;
@@ -19,6 +21,10 @@
             justify-content: flex-end;
             margin-right: 50px;
             align-items: baseline;
+            padding: 30px;
+            background-image: url(../Images/bolsa-verduras.jpg);
+            background-size: 2000px;
+            background-repeat: no-repeat
         }
         input{
             border-radius: 5px;
@@ -48,13 +54,6 @@
             color: $color-3;
         }
 }
-}
-
-form{
-    padding: 30px;
-    background-image: url(../Images/bolsa-verduras.jpg);
-    background-size: 2000px;
-    background-repeat: no-repeat
 }
 
 

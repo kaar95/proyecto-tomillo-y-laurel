@@ -221,9 +221,7 @@ header #search-box:hover > .search-button {
 
 h1 {
   font-family: "Aboreto", cursive;
-  padding: 16px;
-  width: 14ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-start infinite alternate;
   overflow: hidden;
   font-size: 2em;
   text-align: center;
@@ -231,8 +229,8 @@ h1 {
 }
 
 @keyframes typing {
-  from {
-    width: 0;
+  100% {
+    left: 100%;
   }
 }
 hr {
